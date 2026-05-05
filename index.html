@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bota e Luleve | Lule të Bukura në Tiranë</title>
-    <link rel="icon" href="./botaluleve.jpg">
+    <link rel="icon" href="./assets/botaluleve.jpg">
     <meta
       name="description"
       content="Bota e Luleve krijon buqeta dhe kompozime florale në Tiranë që nga viti 2008. Porosi në WhatsApp, dërgim brenda qytetit dhe elegancë florale çdo ditë 08:00 - 21:00."
@@ -23,10 +23,41 @@
     data-map="https://share.google/zSCQDNzKCOtQ8czu7"
     data-review="https://share.google/H7UBQkPIcoOokGR5B"
   >
-    <div class="preloader" id="preloader" aria-hidden="true">
+    <!-- <div class="preloader" id="preloader" aria-hidden="true">
       <div class="preloader__logo">Bota e <em>Luleve</em></div>
       <div class="preloader__line"><span></span></div>
       <p class="preloader__text">Një moment, po bëjmë gati lulet...</p>
+    </div> -->
+
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <a class="topbar__phone" href="tel:+355685174555">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.6 10.8a15.4 15.4 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.4.5 3.7.5.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 3.9c0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 1.3.2 2.5.5 3.7.1.4 0 .8-.3 1.1l-2.2 2.1Z" />
+          </svg>
+          <span>+355 68 517 4555</span>
+        </a>
+
+        <div class="topbar__socials" aria-label="Rrjetet sociale">
+          <a href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="4.2" />
+              <circle cx="17.5" cy="6.5" r="1" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/botaelulevee" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.2 21v-7.5h2.6l.4-3h-3V8.6c0-.9.2-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 4v2.2H8v3h2.3V21h2.9Z" />
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@botaluleve" target="_blank" rel="noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.4 3c.2 1.8 1.3 3.5 3 4.4 1 .6 2 .9 3 .9v2.8c-1 0-2.1-.2-3.1-.6-.8-.3-1.5-.8-2.1-1.3v7.2c0 2.8-2.3 5.1-5.1 5.1S5 19.2 5 16.4s2.3-5.1 5.1-5.1c.3 0 .6 0 .9.1V14c-.3-.1-.6-.2-.9-.2-1.4 0-2.6 1.1-2.6 2.6S8.6 19 10 19s2.6-1.1 2.6-2.6V3h1.8Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="mobile-menu" id="mobile-menu">
@@ -40,6 +71,7 @@
     <header class="site-header" id="site-header">
       <div class="container nav-shell">
         <a class="brand" href="#top">
+          <img class="brand__mark" src="./assets/circlelogo.png" alt="Logo Bota e Luleve" />
           <span class="brand__title">Bota e <em>Luleve</em></span>
         </a>
 
@@ -54,7 +86,9 @@
         <div class="nav-actions">
           <a
             class="nav-wa"
-            href="#porosit"
+            href="https://wa.me/355685174555?text=P%C3%ABrsh%C3%ABndetje%20Bota%20e%20Luleve!%20Dua%20t%C3%AB%20b%C3%ABj%20nj%C3%AB%20porosi."
+            target="_blank"
+            rel="noreferrer"
           >
             Porosit në WhatsApp
           </a>
@@ -70,13 +104,15 @@
     <main id="top">
       <section class="hero">
         <div class="hero-bg">
-          <video class="hero-bg__video" autoplay muted loop playsinline preload="auto">
-            <source src="video.mp4" type="video/mp4" />
-          </video>
+          <img
+            class="hero-bg__image"
+            src="./assets/logobotaluleve.png"
+            alt="Kompozim spektakolar me trëndafila të kuq"
+            loading="eager"
+          />
         </div>
 
         <div class="hero-overlay"></div>
-        <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
 
         <div class="container hero-grid hero-grid--minimal">
           <div class="hero-copy reveal">
@@ -86,12 +122,12 @@
               <span>Luleve</span>
             </h1>
             <p class="hero-copy__lead">
-              Lule që ndezin emocione, kompozime që mbërrijnë me elegancë në derën tënde.
+              Buqeta që lënë gjurmë. Kompozime që flasin pa fjalë.
             </p>
 
             <div class="hero-copy__actions">
               <a class="button button--wa" href="#porosit">Porosit në WhatsApp</a>
-              <a class="button button--ghost" href="#koleksioni">Shiko koleksionin</a>
+              <a class="button button--ghost" href="#koleksioni">Shiko produktet</a>
             </div>
           </div>
         </div>
@@ -99,17 +135,17 @@
 
       <section class="marquee" aria-label="Shërbimet kryesore">
         <div class="marquee__track">
-          <span>Çdo buqetë tregon një histori · Kompozime florale unike me lule të freskëta · Dërgim brenda Tiranës · Çdo ditë 08:00–21:00</span>
-          <span>Çdo buqetë tregon një histori · Kompozime florale unike me lule të freskëta · Dërgim brenda Tiranës · Çdo ditë 08:00–21:00</span>
-          <span>Çdo buqetë tregon një histori · Kompozime florale unike me lule të freskëta · Dërgim brenda Tiranës · Çdo ditë 08:00–21:00</span>
-          <span>Çdo buqetë tregon një histori · Kompozime florale unike me lule të freskëta · Dërgim brenda Tiranës · Çdo ditë 08:00–21:00</span>
+          <span>Që nga 2008 me ju · Buqeta që lënë gjurmë · Dërgim brenda Tiranës · Marrje në dyqan · Hapur çdo ditë 08:00–21:00</span>
+          <span>Që nga 2008 me ju · Buqeta që lënë gjurmë · Dërgim brenda Tiranës · Marrje në dyqan · Hapur çdo ditë 08:00–21:00</span>
+          <span>Që nga 2008 me ju · Buqeta që lënë gjurmë · Dërgim brenda Tiranës · Marrje në dyqan · Hapur çdo ditë 08:00–21:00</span>
+          <span>Që nga 2008 me ju · Buqeta që lënë gjurmë · Dërgim brenda Tiranës · Marrje në dyqan · Hapur çdo ditë 08:00–21:00</span>
         </div>
       </section>
 
       <section class="about" id="rreth-nesh">
         <div class="about__media reveal">
           <img
-            src="./about.webp"
+            src="./assets/about.webp"
             alt="Florist duke krijuar buqetë"
             loading="lazy"
           />
@@ -159,119 +195,49 @@
           <div class="section-head section-head--dark reveal">
             <div>
               <p class="section-kicker">Koleksioni</p>
-              <h2 class="section-title">Krijime me peshë emocioni</h2>
+              <h2 class="section-title">Dyqani floral online</h2>
             </div>
-            <a class="section-link" href="#porosit">Porosit tani</a>
+            <a class="section-link" href="#porosit">Porosit me formular</a>
           </div>
 
-          <div class="collection-grid">
-            <article class="collection-card collection-card--featured reveal">
-              <span class="collection-card__badge">Bestseller</span>
-              <img
-                src="./roses.png"
-                alt="Buqetë me trëndafila"
-                loading="lazy"
-              />
-              <div class="collection-card__overlay"></div>
-              <div class="collection-card__body">
-                <span>Koleksioni klasik</span>
-                <h3>Buqetë me trëndafila</h3>
-                <a
-                  href="https://wa.me/355685174555?text=P%C3%ABrsh%C3%ABndetje%21%20D%C3%ABshiroj%20t%C3%AB%20porosis%20nj%C3%AB%20buqet%C3%AB%20me%20trëndafila."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Porosit
-                </a>
-              </div>
-            </article>
-
-            <article class="collection-card reveal">
-              <span class="collection-card__badge">Premium</span>
-              <img
-                src="./peonies.jpg"
-                alt="Peonies"
-                loading="lazy"
-              />
-              <div class="collection-card__overlay"></div>
-              <div class="collection-card__body">
-                <!-- <span>Signature</span> -->
-                <h3>Peonies</h3>
-                <a
-                  href="https://wa.me/355685174555?text=P%C3%ABrsh%C3%ABndetje%21%20D%C3%ABshiroj%20t%C3%AB%20porosis%20nj%C3%AB%20buqet%C3%AB%20me%20peonies."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Porosit
-                </a>
-              </div>
-            </article>
-            <article class="collection-card reveal">
-              <img
-                src="./roselini.png"
-                alt="Buqetë me roselini"
-                loading="lazy"
-              />
-              <div class="collection-card__overlay"></div>
-              <div class="collection-card__body">
-                <!-- <span>Kompozime</span> -->
-                <h3>Roselini</h3>
-                <a
-                  href="https://wa.me/355685174555?text=P%C3%ABrsh%C3%ABndetje%21%20D%C3%ABshiroj%20t%C3%AB%20porosis%20nj%C3%AB%20buqet%C3%AB%20me%20roselini."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Porosit
-                </a>
-              </div>
-            </article>            
-
-            <article class="collection-card reveal">
-              <span class="collection-card__badge">Signature</span>
-              <img
-                src="./kompozime.jpg"
-                alt="Kompozim i Luleve të egra sezonale"
-                loading="lazy"
-              />
-              <div class="collection-card__overlay"></div>
-              <div class="collection-card__body">
-                <span>Stina</span>
-                <h3>Kompozim mix</h3>
-                <a
-                  href="https://wa.me/355685174555?text=P%C3%ABrsh%C3%ABndetje%21%20D%C3%ABshiroj%20t%C3%AB%20porosis%20nj%C3%AB%20buqet%C3%AB%20me%20kompozim%20mix."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Porosit
-                </a>
-              </div>
-            </article>
-            <article class="collection-card reveal">
-              <img
-                src="./tulipana.png"
-                alt="Buqetë me tulipanë"
-                loading="lazy"
-              />
-              <div class="collection-card__overlay"></div>
-              <div class="collection-card__body">
-                <span></span>
-                <h3>Tulipanë </h3>
-                <a
-                  href="https://wa.me/355685174555?text=P%C3%ABrsh%C3%ABndetje%21%20D%C3%ABshiroj%20t%C3%AB%20porosis%20nj%C3%AB%20buqet%C3%AB%20me%20tulipanë."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Porosit
-                </a>
-              </div>
-            </article>
-
-
-
-   
+          <div class="shop-toolbar reveal">
+            <p>10 produkte të kuruara · porosia dhe pagesa finalizohen në WhatsApp</p>
+            <span>Dërgim në Tiranë & marrje në dyqan</span>
           </div>
+
+          <div class="product-grid" id="product-grid"></div>
         </div>
       </section>
+
+      <div class="product-modal" id="product-modal" hidden aria-hidden="true">
+        <div class="product-modal__backdrop" data-modal-close></div>
+        <div class="product-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+          <button class="product-modal__close" type="button" aria-label="Mbyll" data-modal-close>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="product-modal__media">
+            <img id="product-modal-image" src="" alt="" />
+          </div>
+
+          <div class="product-modal__content">
+            <div class="product-modal__badges" id="product-modal-badges"></div>
+            <p class="product-modal__category" id="product-modal-category"></p>
+            <h3 id="product-modal-title"></h3>
+            <div class="product-modal__price" id="product-modal-price"></div>
+            <p class="product-modal__description" id="product-modal-description"></p>
+            <ul class="product-modal__meta" id="product-modal-meta"></ul>
+
+            <div class="product-modal__actions">
+              <a class="button button--submit" id="product-modal-order" href="#" target="_blank" rel="noreferrer">
+                Porosit në WhatsApp
+              </a>
+              <button class="button button--location" type="button" data-modal-close>Mbyll</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="testimonials">
         <div class="container">
@@ -319,7 +285,7 @@
         </div>
       </section>
 
-      <!-- <section class="process">
+      <section class="process">
         <div class="container">
           <div class="process-head reveal">
             <p class="section-kicker">Si Funksionon</p>
@@ -385,57 +351,54 @@
 
         <div class="gallery__track">
           <a class="gallery__item" href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?w=500&q=80&fit=crop" alt="Buqetë dimri" loading="lazy" />
-            <span>Buqetë dimri</span>
+            <img src="./assets/buqetedimri.png" alt="Buqetë dimri" loading="lazy" />
+            <!-- <span>Buqetë dimri</span> -->
           </a>
           <a class="gallery__item" href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1477554193778-9562c28588c0?w=500&q=80&fit=crop" alt="Kompozim pranveror" loading="lazy" />
-            <span>Kompozim pranveror</span>
+            <img src="./assets/buqetepranverore.png" alt="Kompozim pranveror" loading="lazy" />
+            <!-- <span>Kompozim pranveror</span> -->
           </a>
           <a class="gallery__item" href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=500&q=80&fit=crop" alt="Trëndafila premium" loading="lazy" />
-            <span>Trëndafila premium</span>
+            <img src="./assets/trendafilapremium.png" alt="Trëndafila premium" loading="lazy" />
+            <!-- <span>Trëndafila premium</span> -->
           </a>
           <a class="gallery__item" href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=500&q=80&fit=crop" alt="Lule të bardha" loading="lazy" />
-            <span>Lule të bardha</span>
+            <img src="./assets/tebardh.png" alt="Lule të bardha" loading="lazy" />
+            <!-- <span>Lule të bardha</span> -->
           </a>
           <a class="gallery__item" href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1444930694458-01babf71870c?w=500&q=80&fit=crop" alt="Dasmë elegante" loading="lazy" />
-            <span>Dasmë elegante</span>
+            <img src="./assets/tulipane.png" alt="Tulipanë elegantë" loading="lazy" />
+            <!-- <span>Tulipanë elegantë</span> -->
           </a>
           <a class="gallery__item" href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=500&q=80&fit=crop" alt="Peoni" loading="lazy" />
-            <span>Peoni</span>
+            <img src="./assets/peoni.jpg" alt="Peoni" loading="lazy" />
+            <!-- <span>Peoni</span> -->
           </a>
           <a class="gallery__item" href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?w=500&q=80&fit=crop" alt="Buqetë dimri" loading="lazy" />
-            <span>Buqetë dimri</span>
+            <img src="./assets/buqetedimri.png" loading="lazy" />
+            <!-- <span>Buqetë dimri</span> -->
           </a>
           <a class="gallery__item" href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer">
-            <img src="https://images.unsplash.com/photo-1477554193778-9562c28588c0?w=500&q=80&fit=crop" alt="Kompozim pranveror" loading="lazy" />
-            <span>Kompozim pranveror</span>
+            <img src="./assets/buqetepranverore.png" alt="Kompozim pranveror" loading="lazy" />
+            <!-- <span>Kompozim pranveror</span> -->
           </a>
         </div>
       </section>
 
       <section class="delivery" id="dergesa">
         <div class="delivery__map reveal">
-          <a
-            class="map-card"
-            href="https://share.google/zSCQDNzKCOtQ8czu7"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=900&q=85&fit=crop"
-              alt="Tiranë"
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.8549597017163!2d19.814574409779606!3d41.33376717118705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350318c62b08385%3A0x59fd07fffdf014e7!2sBOTA%20E%20LULEVE%20-%20Dyanelulesh%20tirane%20-%20Buqeta%20me%20lule%20-%20Kompozime%20me%20lule!5e0!3m2!1sen!2s!4v1777904295608!5m2!1sen!2s"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
               loading="lazy"
-            />
-            <div class="map-card__overlay"></div>
-            <div class="map-card__pin">Blv. Zogu I</div>
-            <div class="map-card__caption">Shiko lokacionin në hartë</div>
-          </a>
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Bota e Luleve në hartë"
+            ></iframe>
+          </div>
         </div>
 
           <div class="delivery__content">
@@ -471,8 +434,8 @@
             </div>
 
             <div class="delivery__actions reveal">
-              <a class="button button--location" href="https://share.google/zSCQDNzKCOtQ8czu7" target="_blank" rel="noreferrer">Shiko lokacionin</a>
-              <a class="button button--review" href="https://share.google/H7UBQkPIcoOokGR5B" target="_blank" rel="noreferrer">Lër një vlerësim</a>
+              <a class="button button--location" href="https://maps.app.goo.gl/fzTCo1RNouPbSrx8A" target="_blank" rel="noreferrer">Shiko lokacionin</a>
+              <a class="button button--review" href="https://www.google.com/maps/place/BOTA+E+LULEVE+-+Dyanelulesh+tirane+-+Buqeta+me+lule+-+Kompozime+me+lule/@41.3337672,19.8145744,17z/data=!4m8!3m7!1s0x1350318c62b08385:0x59fd07fffdf014e7!8m2!3d41.3337672!4d19.8171547!9m1!1b1!16s%2Fg%2F11xd9q99b9?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Lër një vlerësim</a>
             </div>
           </div>
       </section>
@@ -492,6 +455,10 @@
           <div class="instagram__cta reveal">
             <a href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer">Hap Instagramin</a>
           </div>
+          <br>
+<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-0daea87e-e6e0-41de-8b13-7ad951a8fc78" data-elfsight-app-lazy></div>
         </div>
       </section>
 
@@ -561,6 +528,25 @@
             Krijojmë bukuri florale me dashuri që nga viti 2008. Dyqani juaj
             floral i besueshëm në zemër të Tiranës.
           </p>
+          <div class="footer-socials" aria-label="Rrjetet sociale">
+            <a href="https://www.instagram.com/botaluleve/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4.2" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/botaelulevee" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.2 21v-7.5h2.6l.4-3h-3V8.6c0-.9.2-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 4v2.2H8v3h2.3V21h2.9Z" />
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@botaluleve" target="_blank" rel="noreferrer" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14.4 3c.2 1.8 1.3 3.5 3 4.4 1 .6 2 .9 3 .9v2.8c-1 0-2.1-.2-3.1-.6-.8-.3-1.5-.8-2.1-1.3v7.2c0 2.8-2.3 5.1-5.1 5.1S5 19.2 5 16.4s2.3-5.1 5.1-5.1c.3 0 .6 0 .9.1V14c-.3-.1-.6-.2-.9-.2-1.4 0-2.6 1.1-2.6 2.6S8.6 19 10 19s2.6-1.1 2.6-2.6V3h1.8Z" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <div class="footer-col">
@@ -574,7 +560,7 @@
 
         <div class="footer-col">
           <h3>Shërbimet</h3>
-          <span>Buqeta dasme</span>
+          <span>Buqeta lulesh</span>
           <span>Dekorime eventesh</span>
           <span>Kompozime florale</span>
           <span>Surpriza me lule</span>
@@ -597,8 +583,24 @@
       <div class="container footer-bottom">
         <p>© <span id="year"></span> Bota e Luleve. Të gjitha të drejtat janë të rezervuara.</p>
       </div>
-    </footer> -->
-
+    </footer>
+<!-- Elfsight Instagram Chat | Untitled Instagram Chat -->
+<!-- <script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-5868f797-55ab-4c29-879d-9135da067f87" data-elfsight-app-lazy></div> -->
+<!-- HoverSignal -->
+<!-- <script type="text/javascript" >
+(function (d, w) {
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function () { n.parentNode.insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = "https://app.hoversignal.com/Api/Script/51000356-110c-402e-b9b9-8ef0a57e6704";
+if (w.opera == "[object Opera]") {
+d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(document, window); -->
+</script>
     <script src="script.js"></script>
   </body>
 </html>
