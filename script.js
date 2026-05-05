@@ -64,7 +64,7 @@ const products = [
     position: "center center",
     badges: ["Limited"],
     description:
-      "Peoni me volum të butë dhe tonalitet blush për një rezultat shumë delikat, modern dhe editorial.",
+      "Peoni me volum të butë dhe tonalitete të ndryshme për një rezultat shumë delikat, modern dhe editorial.",
     details: [
       "Vjen me paketim nude premium.",
       "Zgjedhje perfekte për evente të rafinuara.",
