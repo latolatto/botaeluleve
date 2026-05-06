@@ -42,10 +42,11 @@ body {
   min-width: 320px;
   font-family: var(--sans);
   color: var(--text);
-  background:
+  /* background:
     radial-gradient(circle at top left, rgba(193, 161, 106, 0.08), transparent 22%),
     radial-gradient(circle at 80% 10%, rgba(167, 76, 99, 0.08), transparent 20%),
-    linear-gradient(180deg, #fcf8f3 0%, #f8f1ea 100%);
+    linear-gradient(180deg, #fcf8f3 0%, #f8f1ea 100%); */
+        background: var(--ivory);
   overflow-x: hidden;
 }
 
@@ -268,7 +269,7 @@ body.is-loaded .preloader {
 
 .site-header.is-solid {
   padding: 1rem 0;
-  background: rgba(251, 247, 242, 0.88);
+  background: rgba(243, 238, 230, 0.88);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border);
 }
@@ -1255,8 +1256,8 @@ body.is-loaded .preloader {
 
 .testimonials {
   padding: 7rem 0;
-  background: var(--sand);
-}
+    background: var(--ivory);
+  }
 
 .testimonial-grid {
   display: grid;
@@ -1485,6 +1486,7 @@ body.is-loaded .preloader {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+      background: var(--ivory);
 }
 
 .map-embed {
@@ -2063,7 +2065,7 @@ body.is-loaded .preloader {
 
 
 .product-card {
-justify-items:center;
+justify-items:center !important;
 }
 
 
@@ -2087,8 +2089,8 @@ justify-items:center;
   }
 
   .product-card__content {
-    gap: 0;
-    justify-items:center;
+        gap: 0.5rem;
+         justify-items:center !important;
   }
   .product-card__price {
     justify-content: center; /* Centers price when text-align is center */
@@ -2099,13 +2101,16 @@ justify-items:center;
     width: 100%;
     gap: 0.5rem;
   }
+  .product-card__category {
+    display:none;
+  }
 
   .product-card__button {
     width: 100%;
     flex: none; /* Disables the flex-grow that can cause shifts */
     min-height: 2.5rem; /* Slightly smaller buttons for mobile */
     font-size: 0.65rem;
-    padding: 0.6rem 0.5rem;
+    padding: 0.5rem 0.4rem;
   }
 
   /* Optional: Make the image slightly smaller to breathe */
@@ -2116,6 +2121,18 @@ justify-items:center;
   .nav-wa {
     width: 100%;
   }
+
+  .section-head{
+        align-items: start;
+    flex-direction: column;
+  }
+
+  .product-card__title {
+    font-size:1rem;
+  }
+.product-card__price strong {
+  font-size:1.15rem;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
