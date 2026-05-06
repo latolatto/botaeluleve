@@ -297,17 +297,20 @@ body.is-loaded .preloader {
 }
 
 .brand__title {
-  color: var(--ivory);
+  /* color: var(--ivory); */
+    color: rgba(255, 255, 255, 0.78);
+
   font-family: var(--serif);
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.03em;
   transition: color 0.35s ease;
+    font-style: italic;
+
 }
 
 .brand__title em {
-  color: var(--rose-muted);
-  font-style: italic;
+  /* color: var(--rose-muted); */
 }
 
 .site-header.is-solid .brand__title {
@@ -329,6 +332,7 @@ body.is-loaded .preloader {
   position: relative;
   color: rgba(255, 255, 255, 0.78);
   font-size: 0.72rem;
+  font-weight:700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   transition: color 0.3s ease;
@@ -509,18 +513,19 @@ body.is-loaded .preloader {
   margin: 0;
   font-family: var(--serif);
   font-weight: 300;
-  line-height: 0.94;
+  line-height: 0.90;
   letter-spacing: -0.03em;
 }
 
 .hero-copy h1 {
   color: var(--ivory);
   font-size: clamp(4rem, 10vw, 8.5rem);
+  font-weight:600;
 }
 
 .hero-copy h1 span {
   display: block;
-  color: var(--rose-soft);
+  /* color: var(--rose-soft); */
   font-style: italic;
 }
 
@@ -548,7 +553,7 @@ body.is-loaded .preloader {
 
 .hero-copy__lead {
   max-width: 27rem;
-  margin: 1.2rem 0 0;
+  margin: 0.7rem 0 0;
   color: rgba(255, 255, 255, 0.72);
   font-size: 1rem;
 }
@@ -557,7 +562,7 @@ body.is-loaded .preloader {
   display: flex;
   flex-wrap: wrap;
   gap: 0.95rem;
-  margin-top: 2.1rem;
+  margin-top: 1.5rem;
 }
 
 .button {
