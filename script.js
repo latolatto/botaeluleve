@@ -21,8 +21,8 @@ const whatsappNumber = String(body.dataset.whatsapp || "").replace(/\D/g, "");
 
 const products = [
   {
-    id: "royal-rose-dome",
-    title: "Royal Rose Mix (100 copë)",
+    id: "rose-mix",
+    title: "Kopshti i Trëndafilave Mix (100 copë)",
     category: "Koleksioni Premium",
     price: "25,000 L",
     oldPrice: "",
@@ -38,8 +38,8 @@ const products = [
     ],
   },
   {
-    id: "red-roses-classic",
-    title: "100 Trëndafila Klasikë",
+    id: "red-rose",
+    title: "Trëndafila Klasikë të Kuq (100 copë)",
     category: "Trëndafila",
     price: "25,000 L",
     oldPrice: "",
@@ -55,7 +55,7 @@ const products = [
     ],
   },
   {
-    id: "peony-blush-deluxe",
+    id: "peony-deluxe",
     title: "Peony Deluxe",
     category: "Peonies",
     price: "20,000 - 25,000 L",
@@ -90,7 +90,7 @@ const products = [
   },
   {
     id: "spring-tulips",
-    title: "Tulipanë Pranvere",
+    title: "Tulipanët e Pranverës",
     category: "Tulipanë",
     price: "10,000 L",
     oldPrice: "",
