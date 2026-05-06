@@ -2060,40 +2060,17 @@ body.is-loaded .preloader {
   }
 
   .product-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-
-.product-card {
-justify-items:center !important;
-}
-
-
-  .detailsbtn{
-    display:none;
-  }
-  .product-card__actions {
-    flex-direction: column;
-  }
-/* Ensure the grid doesn't overflow and cells are centered */
-  .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem; /* Reduced gap for small screens */
+    gap: 0.75rem;
     padding: 0.5rem;
   }
 
-  .product-card__content {
-    padding: 1rem 0.75rem; /* Tighter padding to prevent text shifting */
-    gap: 0.5rem; /* Restore a small gap since you had set it to 0 */
-    text-align: center; /* Center text to align with the image above */
+  .product-card {
+    justify-items: stretch;
   }
 
-  .product-card__content {
-        gap: 0.5rem;
-         justify-items:center !important;
-  }
-  .product-card__price {
-    justify-content: center; /* Centers price when text-align is center */
+  .detailsbtn {
+    display: none;
   }
 
   .product-card__actions {
@@ -2101,38 +2078,52 @@ justify-items:center !important;
     width: 100%;
     gap: 0.5rem;
   }
+
+  .product-card__content {
+    padding: 1rem 0.75rem;
+    gap: 0.5rem;
+    text-align: center;
+    justify-items: stretch;
+  }
+
+  .product-card__price {
+    justify-content: center;
+  }
+
   .product-card__category {
-    display:none;
+    display: none;
   }
 
   .product-card__button {
     width: 100%;
-    flex: none; /* Disables the flex-grow that can cause shifts */
-    min-height: 2.5rem; /* Slightly smaller buttons for mobile */
+    flex: none;
+    min-height: 2.5rem;
     font-size: 0.65rem;
     padding: 0.5rem 0.4rem;
   }
 
-  /* Optional: Make the image slightly smaller to breathe */
   .product-card__media {
     padding: 0.5rem;
+    width: 100%;
   }
+
   .button,
   .nav-wa {
     width: 100%;
   }
 
-  .section-head{
-        align-items: start;
+  .section-head {
+    align-items: start;
     flex-direction: column;
   }
 
   .product-card__title {
-    font-size:1rem;
+    font-size: 1rem;
   }
-.product-card__price strong {
-  font-size:1.15rem;
-}
+
+  .product-card__price strong {
+    font-size: 1.15rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

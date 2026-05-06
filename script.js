@@ -124,7 +124,7 @@ const products = [
   },
     {
     id: "roselini-150",
-    title: "Roselini Midi",
+    title: "Roselini",
     category: "Roselini",
     price: "15,000 L",
     oldPrice: "",
@@ -175,7 +175,7 @@ const products = [
   },
   {
     id: "romantic-mix-50-70",
-    title: "Sezonale Petite",
+    title: "Sezonale",
     category: "Kompozime",
     price: "5,000 - 7,000 L",
     oldPrice: "",
@@ -192,7 +192,7 @@ const products = [
   },
   {
     id: "rose-100-120",
-    title: "Royal Rose Compact",
+    title: "Royal Rose",
     category: "Koleksioni Premium",
     price: "10,000 - 12,000 L",
     oldPrice: "",
