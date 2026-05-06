@@ -2067,7 +2067,41 @@ body.is-loaded .preloader {
   .product-card__actions {
     flex-direction: column;
   }
+/* Ensure the grid doesn't overflow and cells are centered */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem; /* Reduced gap for small screens */
+    padding: 0.5rem;
+  }
 
+  .product-card__content {
+    padding: 1rem 0.75rem; /* Tighter padding to prevent text shifting */
+    gap: 0.5rem; /* Restore a small gap since you had set it to 0 */
+    text-align: center; /* Center text to align with the image above */
+  }
+
+  .product-card__price {
+    justify-content: center; /* Centers price when text-align is center */
+  }
+
+  .product-card__actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .product-card__button {
+    width: 100%;
+    flex: none; /* Disables the flex-grow that can cause shifts */
+    min-height: 2.5rem; /* Slightly smaller buttons for mobile */
+    font-size: 0.65rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  /* Optional: Make the image slightly smaller to breathe */
+  .product-card__media {
+    padding: 0.5rem;
+  }
   .button,
   .nav-wa {
     width: 100%;
@@ -2091,4 +2125,81 @@ body.is-loaded .preloader {
     opacity: 1;
     transform: none;
   }
+}
+
+
+/* --- INTERNATIONAL PAYMENTS COMPACT BAR --- */
+.intl-payment-bar {
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03); /* Background shumë i lehtë */
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(5px);
+}
+
+.intl-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.intl-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.intl-info i {
+    color: #25D366; /* WhatsApp Green */
+    font-size: 1.2rem;
+}
+
+.intl-info p {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.4;
+}
+
+.intl-info p span {
+    color: var(--gold); /* Ngjyra ari për metodat */
+    font-weight: 600;
+}
+
+.intl-logos {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.intl-logos img {
+    height: 16px; /* Madhësi minimale */
+    width: auto;
+    /* filter: grayscale(100%); */
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+
+/* Përshtatja për Mobile */
+@media (max-width: 768px) {
+    .intl-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .intl-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .intl-logos {
+        justify-content: center;
+        gap: 12px;
+    }
 }
