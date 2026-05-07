@@ -992,7 +992,7 @@ body.is-loaded .preloader {
 .product-card__button {
   flex: 1 1 0;
   min-height: 2.9rem;
-  padding: 0.75rem 1rem;
+  /* padding: 0.75rem 1rem; */
   border-radius: 999px;
   border: 1px solid rgba(18, 11, 12, 0.12);
   background: rgba(18, 11, 12, 0.04);
@@ -2060,7 +2060,8 @@ body.is-loaded .preloader {
   }
 
   .product-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+
   }
 
 
@@ -2077,7 +2078,10 @@ justify-items:center !important;
   }
 /* Ensure the grid doesn't overflow and cells are centered */
   .product-grid {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 0.5rem; /* Reduced gap for small screens */
     padding: 0.3rem;
   }
@@ -2110,7 +2114,7 @@ justify-items:center !important;
     flex: none; /* Disables the flex-grow that can cause shifts */
     min-height: 2.5rem; /* Slightly smaller buttons for mobile */
     font-size: 0.65rem;
-    padding: 0.5rem 0.4rem;
+    padding: 0.6rem 0.5rem;
   }
 
   /* Optional: Make the image slightly smaller to breathe */
@@ -2123,7 +2127,7 @@ justify-items:center !important;
   }
 
   .section-head{
-        align-items: start;
+        align-items: center;
     flex-direction: column;
   }
 
@@ -2132,6 +2136,25 @@ justify-items:center !important;
   }
 .product-card__price strong {
   font-size:1.15rem;
+}
+
+.footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+.footer-col{
+ align-self: center;
+    text-align: center;
+}
+
+.sherbimet{
+      text-align: left;
+
+}
+   .collections p{
+    text-align:center;
+   }
+   .product-card__content {
+        width: 80%;
 }
 }
 
@@ -2152,6 +2175,14 @@ justify-items:center !important;
     opacity: 1;
     transform: none;
   }
+
+  .shop-toolbar {
+    justify-content: center;
+  }
+
+.section-head--dark .section-kicker {
+    text-align: center !important;
+}
 }
 
 
@@ -2229,4 +2260,9 @@ justify-items:center !important;
         justify-content: center;
         gap: 12px;
     }
+}
+
+
+span.product-card__badge {
+    width: fit-content;
 }

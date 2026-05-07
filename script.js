@@ -383,7 +383,7 @@ const renderProductCards = () => {
             </div>
             <div class="product-card__actions">
               <button class="product-card__button detailsbtn" type="button" data-product-details="${escapeHtml(product.id)}">Detaje</button>
-              <button class="product-card__button product-card__button--primary" type="button" data-product-order="${escapeHtml(product.id)}">Porosit tani</button>
+              <button class="product-card__button orderbtn product-card__button--primary" type="button" data-product-order="${escapeHtml(product.id)}">Porosit tani</button>
             </div>
           </div>
         </article>
