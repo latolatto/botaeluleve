@@ -1796,6 +1796,7 @@ body.is-loaded .preloader {
 .footer-col {
   display: grid;
   align-content: start;
+      justify-items: start;
   gap: 0.55rem;
 }
 
@@ -1812,6 +1813,7 @@ body.is-loaded .preloader {
 .footer-bottom p {
   color: rgba(255, 255, 255, 0.48);
   font-size: 0.88rem;
+   text-align:center;
 }
 
 .footer-bottom {
@@ -1952,6 +1954,23 @@ body.is-loaded .preloader {
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .footer-col{
+ align-self: center;
+    text-align: center;
+}
+
+
+.footer-col.navigimi {
+    justify-items: center;
+}
+
+.footer-col.kontakti {
+    justify-items: center;
+}
+.sherbimet{
+      text-align: left;
+
+}
 }
 
 @media (max-width: 768px) {
@@ -2018,6 +2037,23 @@ body.is-loaded .preloader {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+.footer-col{
+ align-self: center;
+    text-align: center;
+}
+
+
+.footer-col.navigimi {
+    justify-items: center;
+}
+
+.footer-col.kontakti {
+    justify-items: center;
+}
+.sherbimet{
+      text-align: left;
+
+}
   .order-form__grid,
   .order-form__grid--simple {
     grid-template-columns: 1fr;
@@ -2042,7 +2078,6 @@ body.is-loaded .preloader {
   .map-embed iframe {
     min-height: 26rem;
   }
-
 }
 
 @media (max-width: 560px) {
@@ -2141,10 +2176,20 @@ body.is-loaded .preloader {
     text-align: center;
 }
 
+
+.footer-col.navigimi {
+    justify-items: center;
+}
+
+.footer-col.kontakti {
+    justify-items: center;
+}
 .sherbimet{
       text-align: left;
 
 }
+
+
    .collections p{
     text-align:center;
    }
@@ -2156,6 +2201,9 @@ body.is-loaded .preloader {
   font-size:1rem;
 }
 
+.shop-toolbar {
+ justify-content: center;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2265,4 +2313,18 @@ body.is-loaded .preloader {
 
 span.product-card__badge {
     width: fit-content;
+}
+
+/* Third-party widgets - prevent extra spacing */
+.elfsight-app-5868f797-55ab-4c29-879d-9135da067f87 {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    width: auto !important;
+    height: auto !important;
+    z-index: 999 !important;
+}
+
+.elfsight-app-5868f797-55ab-4c29-879d-9135da067f87 * {
+    box-sizing: border-box;
 }
