@@ -22,7 +22,7 @@ const whatsappNumber = String(body.dataset.whatsapp || "").replace(/\D/g, "");
 const products = [
   {
     id: "rose-mix",
-    title: "Kopshti i Trëndafilave Mix (100 copë)",
+    title: "Kopshti i Trëndafilave (100 copë)",
     category: "Koleksioni Premium",
     price: "25,000 L",
     oldPrice: "",

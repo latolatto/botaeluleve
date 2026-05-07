@@ -2125,9 +2125,12 @@ body.is-loaded .preloader {
 
   .product-card__title {
     font-size:1rem;
+    min-height:2.5rem;
+    text-align: center;
   }
 .product-card__price strong {
   font-size:1.15rem;
+  min-height:3rem;
 }
 
 .footer-grid {
