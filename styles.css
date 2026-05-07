@@ -2149,8 +2149,13 @@ body.is-loaded .preloader {
     text-align:center;
    }
    .product-card__content {
-        width: 80%;
+        width: 100%;
 }
+
+.product-card__price strong{
+  font-size:1rem;
+}
+
 }
 
 @media (prefers-reduced-motion: reduce) {
