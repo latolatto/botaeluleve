@@ -206,7 +206,7 @@ body.is-loaded .preloader {
   justify-content: center;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.74);
+  color: #ffffff;
   transition:
     transform 0.25s ease,
     background 0.25s ease,
@@ -219,7 +219,7 @@ body.is-loaded .preloader {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.22);
-  color: #fff;
+  color: #ffffff;
 }
 
 .mobile-menu {
@@ -269,10 +269,14 @@ body.is-loaded .preloader {
 
 .site-header.is-solid {
   padding: 1rem 0;
-  background: rgba(243, 238, 230, 0.88);
+  background:#ffffff;
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border);
 }
+    .footer-brand p {
+        color: #ffffff82 !important;
+
+    }
 
 .nav-shell {
   display: flex;
@@ -2030,7 +2034,7 @@ body.is-loaded .preloader {
   .testimonial-grid,
   .process-line,
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .product-grid {

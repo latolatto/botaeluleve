@@ -26,7 +26,7 @@ const products = [
     category: "Koleksioni Premium",
     price: "25,000 L",
     oldPrice: "",
-    image: "./assets/listings/100trendafilamix.png",
+    image: "./assets/listings/100trendafilamix.webp",
     position: "center center",
     badges: ["Hot", "Bestseller"],
     description:
@@ -43,7 +43,7 @@ const products = [
     category: "Trëndafila",
     price: "25,000 L",
     oldPrice: "",
-    image: "./assets/listings/100trendafilatekuq.png",
+    image: "./assets/listings/100trendafilatekuq.webp",
     position: "center center",
     badges: ["Premium"],
     description:
@@ -60,7 +60,7 @@ const products = [
     category: "Peonies",
     price: "20,000-25,000 L",
     oldPrice: "",
-    image: "./assets/listings/peonydeluxe.png",
+    image: "./assets/listings/peonydeluxe.webp",
     position: "center center",
     badges: ["Limited"],
     description:
@@ -77,7 +77,7 @@ const products = [
     category: "Roselini",
     price: "25,000 L",
     oldPrice: "",
-    image: "./assets/listings/roselini.png",
+    image: "./assets/listings/roselini.webp",
     position: "center center",
     badges: ["Signature"],
     description:
@@ -94,7 +94,7 @@ const products = [
     category: "Tulipanë",
     price: "10,000 L",
     oldPrice: "",
-    image: "./assets/listings/tulipane.png",
+    image: "./assets/listings/tulipane.webp",
     position: "center center",
     badges: ["Fresh"],
     description:
@@ -111,7 +111,7 @@ const products = [
     category: "Kompozime",
     price: "10,000-12,000 L",
     oldPrice: "",
-    image: "./assets/listings/kompozimmix.png",
+    image: "./assets/listings/kompozimmix.webp",
     position: "center center",
     badges: ["Classic"],
     description:
@@ -128,7 +128,7 @@ const products = [
     category: "Roselini",
     price: "15,000 L",
     oldPrice: "",
-    image: "./assets/listings/roselini150.png",
+    image: "./assets/listings/roselini150.webp",
     position: "center center",
     badges: ["Signature"],
     description:
@@ -145,7 +145,7 @@ const products = [
     category: "Kompozime",
     price: "20,000 L",
     oldPrice: "",
-    image: "./assets/listings/mix200.png",
+    image: "./assets/listings/mix200.webp",
     position: "center center",
     badges: ["Exotic"],
     description:
@@ -162,7 +162,7 @@ const products = [
     category: "Kompozime",
     price: "25,000 L",
     oldPrice: "",
-    image: "./assets/listings/mix250.png",
+    image: "./assets/listings/mix250.webp",
     position: "center center",
     badges: ["Classic"],
     description:
@@ -179,7 +179,7 @@ const products = [
     category: "Kompozime",
     price: "5,000-7,000 L",
     oldPrice: "",
-    image: "./assets/listings/mix50-70.png",
+    image: "./assets/listings/mix50-70.webp",
     position: "center center",
     badges: ["Ekonomike"],
     description:
@@ -196,7 +196,7 @@ const products = [
     category: "Koleksioni Premium",
     price: "10,000-12,000 L",
     oldPrice: "",
-    image: "./assets/listings/whiterose.png",
+    image: "./assets/listings/whiterose.webp",
     position: "center center",
     badges: ["Premium"],
     description:
@@ -213,7 +213,7 @@ const products = [
     category: "Kompozime",
     price: "5,000-6,000 L",
     oldPrice: "",
-    image: "./assets/listings/mix50-60.png",
+    image: "./assets/listings/mix50-60.webp",
     position: "center center",
     badges: [ "Ekonomike"],
     description:
