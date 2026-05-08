@@ -1,6 +1,6 @@
 const body = document.body;
 const preloader = document.getElementById("preloader");
-// const header = document.getElementById("site-header");
+const header = document.getElementById("site-header");
 const navToggle = document.getElementById("nav-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 const yearTarget = document.getElementById("year");
@@ -235,35 +235,13 @@ const setLoaded = () => {
   }, 1700);
 };
 
-const header = document.getElementById("site-header");
-let ticking = false;
-
 const syncHeader = () => {
-  if (!header) return;
-
-  const shouldBeSolid = window.scrollY > 56;
-  
-  // Only update the DOM if the state actually needs to change
-  // This prevents unnecessary work for the mobile processor
-  if (shouldBeSolid && !header.classList.contains("is-solid")) {
-    header.classList.add("is-solid");
-  } else if (!shouldBeSolid && header.classList.contains("is-solid")) {
-    header.classList.remove("is-solid");
+  if (!header) {
+    return;
   }
-  
-  ticking = false;
+
+  header.classList.toggle("is-solid", window.scrollY > 56);
 };
-
-// Initial check on load
-syncHeader();
-
-window.addEventListener("scroll", () => {
-  if (!ticking) {
-    // requestAnimationFrame ensures this runs at the perfect time for the browser
-    window.requestAnimationFrame(syncHeader);
-    ticking = true;
-  }
-}, { passive: true });
 
 const closeMenu = () => {
   if (!navToggle || !mobileMenu) {
@@ -487,7 +465,8 @@ if (document.readyState === "complete") {
   window.addEventListener("load", setLoaded, { once: true });
 }
 
-
+syncHeader();
+window.addEventListener("scroll", syncHeader, { passive: true });
 
 if (navToggle && mobileMenu) {
   navToggle.addEventListener("click", () => {
