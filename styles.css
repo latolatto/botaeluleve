@@ -2208,6 +2208,10 @@ body.is-loaded .preloader {
 .shop-toolbar {
  justify-content: center;
 }
+
+.testimonial-grid {
+  grid-template-columns: 1fr;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
