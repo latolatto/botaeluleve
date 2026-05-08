@@ -2023,7 +2023,7 @@ img {
     gap: 0.5rem;
   }
   .product-card__category {
-    display:none;
+    /* display:none; */
   }
 
   .product-card__button {
