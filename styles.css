@@ -1,13 +1,12 @@
-/* At the very top of styles.css */
 @font-face {
-  font-family: 'YourSerifFont';
-  src: url('/fonts/serif-v21.woff2') format('woff2');
-  font-display: swap; /* Critical for FCP */
+  font-family: 'Cormorant Garamond'; /* Must match your --serif variable */
+  src: url('./fonts/serif-v21.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'YourSansFont';
-  src: url('/fonts/sans-v17.woff2') format('woff2');
+  font-family: 'DM Sans'; /* Must match your --sans variable */
+  src: url('./fonts/sans-v17.woff2') format('woff2');
   font-display: swap;
 }
 
