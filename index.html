@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bota e Luleve | Buqeta dhe Kompozime Lulesh me Porosi në Tiranë</title>
-    <link rel="icon" href="./assets/botaluleve.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://elfsightcdn.com" />
+    <link rel="preload" as="image" href="./assets/logobotaluleve.webp" />
+    <link rel="icon" href="./assets/botaluleve.webp" type="image/webp" />
     <meta
       name="description"
       content="Bota e Luleve krijon buqeta dhe kompozime florale në Tiranë që nga viti 2008. Porosi në WhatsApp, dërgim brenda qytetit dhe elegancë florale çdo ditë 08:00 - 21:00."
@@ -17,13 +21,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="sq_AL" />
     <meta property="og:site_name" content="Bota e Luleve" />
-    <meta property="og:image" content="https://botaluleve.com/assets/botaluleve.jpg" />
+    <meta property="og:image" content="https://botaluleve.com/assets/botaluleve.webp" />
     <meta property="og:image:alt" content="Bota e Luleve - Kompozim buqete në Tiranë" />
     <meta property="og:url" content="https://botaluleve.com/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Bota e Luleve | Buqeta dhe Kompozime Lulesh në Tiranë" />
     <meta name="twitter:description" content="Bota e Luleve krijon buqeta dhe kompozime florale të personalizuara në Tiranë. Porosit në WhatsApp, përdor dërgim brenda qytetit dhe ofertë të hapur 08:00 - 21:00." />
-    <meta name="twitter:image" content="https://botaluleve.com/assets/botaluleve.jpg" />
+    <meta name="twitter:image" content="https://botaluleve.com/assets/botaluleve.webp" />
     <link rel="canonical" href="https://botaluleve.com/" />
     <script type="application/ld+json">
       {
@@ -45,7 +49,7 @@
           "https://www.facebook.com/botaelulevee",
           "https://www.tiktok.com/@botaluleve"
         ],
-        "image": "https://botaluleve.com/assets/botaluleve.jpg",
+        "image": "https://botaluleve.com/assets/botaluleve.webp",
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 41.3337672,
@@ -55,12 +59,9 @@
         "priceRange": "L"
       }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body
@@ -117,7 +118,7 @@
     <header class="site-header" id="site-header">
       <div class="container nav-shell">
         <a class="brand" href="#top">
-          <img class="brand__mark" src="./assets/circlelogo.png" alt="Logo Bota e Luleve" />
+          <img class="brand__mark" src="./assets/circlelogo.webp" alt="Logo Bota e Luleve" />
           <span class="brand__title">Bota e <em>Luleve</em></span>
         </a>
 
@@ -152,9 +153,10 @@
         <div class="hero-bg">
           <img
             class="hero-bg__image"
-            src="./assets/logobotaluleve.png"
+            src="./assets/logobotaluleve.webp"
             alt="Kompozim spektakolar me trëndafila të kuq"
             loading="eager"
+            fetchpriority="high"
           />
         </div>
 
@@ -496,10 +498,6 @@
           </div>
         </div>
       </section>
-
-
-
-
       <section class="instagram">
         <div class="container">
           <div class="section-head section-head--center section-head--dark reveal">
@@ -517,7 +515,6 @@
           </div>
           <br>
 <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
 <div class="elfsight-app-0daea87e-e6e0-41de-8b13-7ad951a8fc78" data-elfsight-app-lazy></div>
         </div>
       </section>
@@ -661,7 +658,7 @@ d.addEventListener("DOMContentLoaded", f, false);
 </script>
 <!-- /Hoversignal -->
  <!-- Elfsight Instagram Chat | Untitled Instagram Chat -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
+<script src="https://elfsightcdn.com/platform.js" defer></script>
 <div class="elfsight-app-5868f797-55ab-4c29-879d-9135da067f87" data-elfsight-app-lazy></div>
     <script src="script.js"></script>
   </body>
