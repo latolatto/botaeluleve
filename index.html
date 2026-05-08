@@ -60,9 +60,11 @@
       }
     </script>
 
-     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Sans:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+     <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" /></noscript>
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
   </head>
   <body
     data-whatsapp="355685174555"
@@ -644,24 +646,28 @@
 
 
 
-    <script src="script.js" defer></script>
-    <!-- HoverSignal -->
-<script type="text/javascript" >
-(function (d, w) {
-var n = d.getElementsByTagName("script")[0],
-s = d.createElement("script"),
-f = function () { n.parentNode.insertBefore(s, n); };
-s.type = "text/javascript";
-s.async = true;
-s.src = "https://app.hoversignal.com/Api/Script/51000356-110c-402e-b9b9-8ef0a57e6704";
-if (w.opera == "[object Opera]") {
-d.addEventListener("DOMContentLoaded", f, false);
-} else { f(); }
-})(document, window);
-</script>
-<!-- /Hoversignal -->
-  <!-- Elfsight Instagram Chat | Untitled Instagram Chat -->
-<script src="https://elfsightcdn.com/platform.js" defer></script>
-<div class="elfsight-app-5868f797-55ab-4c29-879d-9135da067f87" data-elfsight-app-lazy></div>
+    <script defer src="script.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          var preload = document.createElement('link');
+          preload.rel = 'preconnect';
+          preload.href = 'https://app.hoversignal.com';
+          preload.crossOrigin = '';
+          document.head.appendChild(preload);
+
+          var hoverScript = document.createElement('script');
+          hoverScript.src = 'https://app.hoversignal.com/Api/Script/51000356-110c-402e-b9b9-8ef0a57e6704';
+          hoverScript.async = true;
+          document.body.appendChild(hoverScript);
+
+          var elfsightScript = document.createElement('script');
+          elfsightScript.src = 'https://elfsightcdn.com/platform.js';
+          elfsightScript.async = true;
+          document.body.appendChild(elfsightScript);
+        }, 1500);
+      });
+    </script>
+    <div class="elfsight-app-5868f797-55ab-4c29-879d-9135da067f87" data-elfsight-app-lazy></div>
   </body>
 </html>

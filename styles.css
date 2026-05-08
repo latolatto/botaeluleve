@@ -5,7 +5,7 @@
   --rose-muted: #8a4558;
   --blush: #f6efea;
   --ivory: #fbf7f2;
-  --sand: #f1eae3;
+  --sand: #ede2d6;
   --gold: #c1a16a;
   --sage: #8c9684;
   --deep: #120b0c;
@@ -1786,40 +1786,37 @@ body.is-loaded .preloader {
 .footer-brand p {
   margin-top: 1rem;
   max-width: 18rem;
-  color: rgba(255, 255, 255, 0.4);
-}
+    color: rgba(255, 255, 255, 0.78);
+  }
 
-.footer-socials {
-  margin-top: 1.2rem;
-}
+  .footer-socials {
+    margin-top: 1.2rem;
+  }
 
-.footer-socials a {
-  border-color: rgba(255, 255, 255, 0.1);
-}
+  .footer-socials a {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
 
-.footer-col {
-  display: grid;
-  align-content: start;
-      justify-items: start;
-  gap: 0.55rem;
-}
+  .footer-col {
+    display: grid;
+    align-content: start;
+        justify-items: start;
+    gap: 0.55rem;
+  }
 
-.footer-col h3 {
-  margin: 0 0 0.8rem;
-  color: rgba(255, 255, 255, 0.32);
-  font-size: 0.66rem;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-}
+  .footer-col h3 {
+    margin: 0 0 0.8rem;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.66rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+  }
 
-.footer-col a,
-.footer-col span,
-.footer-bottom p {
-  color: rgba(255, 255, 255, 0.48);
-  font-size: 0.88rem;
-   text-align:center;
-}
-
+  .footer-col a,
+  .footer-col span,
+  .footer-bottom p {
+    color: rgba(255, 255, 255, 0.45);
+  }
 .footer-bottom {
   margin-top: 2rem;
   padding-top: 1.5rem;
@@ -2336,6 +2333,13 @@ span.product-card__badge {
 .elfsight-app-5868f797-55ab-4c29-879d-9135da067f87 * {
     box-sizing: border-box;
 }
+/* header#site-header.is-solid {
+  background-color:#faf0f0 !important;
+} */
+
 header#site-header.is-solid {
-  background-color:var(--sand) !important;
+    backdrop-filter: blur(18px)!important;
+    padding: 1rem 0px;
+    background: rgba(243, 238, 230, 0.88)!important;
+    border-bottom: 1px solid var(--border);
 }
